@@ -1,0 +1,133 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="layout.GuessPokemonFragment">
+
+    <RelativeLayout
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_back"
+            android:id="@+id/imageViewGuessFramentBack"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/imageViewGuessFramentBack"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/imageViewGuessFramentBack"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="00"
+                android:textColor="#FFF"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:id="@+id/textViewGuessFragmentScore"
+                android:paddingLeft="4dp"
+                android:textSize="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="match_parent"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_toLeftOf="@id/textViewGuessFragmentScore"
+                android:id="@+id/imageViewGuessFramentPokeballIcon"
+                android:src="@drawable/ic_pokeball"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:shadowColor="#A0A"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.1"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:id="@+id/textViewGuessFragmentHeading"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@id/imageViewGuessFramentBack"
+            android:text="@string/who_s_that_pokemon" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/textViewGuessFragmentHeading"
+            android:src="@drawable/ic_pokeball"
+            android:padding="22dp"
+            android:background="@drawable/image_main_shape"
+            android:layout_height="250dp"
+            android:id="@+id/imageView" />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="Pickachu"
+                android:textColor="#fff"
+                android:id="@+id/buttonGuessFragment1"
+                android:background="@drawable/button_indigo_shape"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/buttonGuessFragment2"
+                android:text="Pickachu"
+                android:textColor="#fff"
+                android:layout_below="@id/buttonGuessFragment1"
+                android:background="@drawable/button_pink_shape"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/buttonGuessFragment3"
+                android:text="Pickachu"
+                android:textColor="#fff"
+                android:layout_below="@id/buttonGuessFragment2"
+                android:background="@drawable/button_orange_shape"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/buttonGuessFragment4"
+                android:text="Pickachu"
+                android:textColor="#fff"
+                android:layout_below="@id/buttonGuessFragment3"
+                android:background="@drawable/button_purple_shape"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</ScrollView>
